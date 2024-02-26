@@ -15,6 +15,7 @@ app.listen(puerto, () => {
   console.log("Server running in port " + puerto);
 });
 //Carga las rutas en la app (sin esto no se ejecutan las peticiones estructuradas)
+app.use(express.urlencoded({ extended: true }));
 app.use("/api", routesArticle);
 //Llamado de las rutas
 
