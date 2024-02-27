@@ -1,5 +1,5 @@
 //Para elegir sólo objetos específicos de la dependencia
-const { Scheme, model } = require("mongoose");
+const { Schema, model } = require("mongoose");
 
 const ArticleSchema = Schema({
   title: {
